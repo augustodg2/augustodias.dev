@@ -1,82 +1,107 @@
-:root {
-  font-size: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  --blue: #79addc;
-  --black: #331e36;
-  --gray: #5c3f6b;
-
-  --xs: 0.4rem;
-  --sm: 0.8rem;
-  --md: 1.6rem;
-  --lg: 3.2rem;
-  --xl: 6.4rem;
-
-  --mono: "Courier New", Courier, monospace;
-  --sans: Arial, Helvetica, sans-serif;
+html {
+    background: #FFF9E2;
+    font-family: "Courier Prime", "Courier New", Courier, monospace;
 }
 
 body {
-  background-color: var(--blue);
-  color: var(--black);
-  font-family: var(--sans);
-  font-size: 1.6rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    overflow: hidden;
 }
 
 .content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: var(--md);
-  max-width: 750px;
-  margin: auto;
+    max-width: 1260px;
+    padding: 0 16px;
+    margin: 0 auto;
+    height: 100vh;
 }
 
-.profile {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+header {
+    padding: 32px 0;
 }
 
-.profile-pic {
-  border-radius: 50%;
+h1, h2, h3 {
+    font-weight: normal;
+    line-height: normal;
 }
 
-.profile-name {
-  margin-top: var(--md);
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
 }
 
-.profile-links {
-  display: flex;
-  list-style: none;
-  margin-top: var(--sm);
-  max-width: 200px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.profile-links a {
-  color: var(--gray);
+h2 {
+    font-size: 48px;
 }
 
-.profile-link {
-  display: flex;
-  line-height: 1.5;
+h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
 }
 
-.profile-link:not(:last-child)::after {
-  margin: 0 var(--xs);
-  content: "|";
-  display: block;
+.mail a {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
 }
 
-.profile-description {
-  margin-top: var(--lg);
-  text-align: center;
-  font-size: 2.2rem;
-  font-family: var(--mono);
+.hero {
+    padding: 64px 0;
+}
+
+.mail {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.social .icons {
+    margin-top: 96px;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.dots {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+
+.pink-blob {
+    position: absolute;
+    bottom: -200px;
+    left: -120px;
+}
+
+.yellow-blob {
+    position: absolute;
+    bottom: -200px;
+    right: -120px;
+}
+
+.language-selector {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language-selector a {
+    color: #000;
+    font-size: 20px;
+    padding: 4px 8px;
+}
+
+.language-selector a.active {
+    background: rgba(255, 245, 0, 0.5);
 }

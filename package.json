@@ -1,12 +1,13 @@
 {
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "prettier": "^3.0.2"
   },
   "name": "augustodias.dev",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:augustodgd/augustodias.dev.git",
-  "author": "Augusto Dias <augustodg2@gmail.com>",
+  "author": "Augusto Dias <github@augustodias.dev>",
   "homepage": "https://augustodias.dev",
   "scripts": {
     "deploy": "gh-pages -d public"
