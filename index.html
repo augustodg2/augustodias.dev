@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Augusto Dias</title>
+    <link rel="icon" href="img/favicon.png"/>
+    <style>
+        html {
+            background: #FFF9E2;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const languages = ['pt', 'en'];
+    const defaultLanguage = 'en';
+
+    const browserLanguage = navigator.language.split('-')[0];
+
+    if (languages.includes(browserLanguage)) {
+        window.location.replace(`./${browserLanguage}.html`);
+    } else {
+        window.location.replace(`./${defaultLanguage}.html`);
+    }
+</script>
+</body>
+</html>

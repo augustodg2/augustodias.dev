@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #FFF9E2;
+    font-family: "Courier Prime", "Courier New", Courier, monospace;
+}
+
+body {
+    overflow: hidden;
+}
+
+.content {
+    max-width: 1260px;
+    padding: 0 16px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+header {
+    padding: 32px 0;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.mail a {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+}
+
+.hero {
+    padding: 64px 0;
+}
+
+.mail {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.social .icons {
+    margin-top: 96px;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.dots {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+
+.pink-blob {
+    position: absolute;
+    bottom: -200px;
+    left: -120px;
+}
+
+.yellow-blob {
+    position: absolute;
+    bottom: -200px;
+    right: -120px;
+}
+
+.language-selector {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language-selector a {
+    color: #000;
+    font-size: 20px;
+    padding: 4px 8px;
+}
+
+.language-selector a.active {
+    background: rgba(255, 245, 0, 0.5);
+}
